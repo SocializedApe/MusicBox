@@ -1,8 +1,11 @@
 Problema:
-TODO
+Norime, kad grotų keli pjezo vienu metu, kad išeitų turėti kelis balsus.
 
 Dizainas:
-TODO
+Arduino turi tris timerius: Timer0, Timer1 ir Timer2.
+Timer0 valdo, kada nata prasideda ir baigiasi, ir iškviečia interrupt kas ~1 ms.
+Timer2 naudoja `tone()` ir valdo vieną pjezo (buzzerį).
+Timer1 valdo du pjezo vienu metu, naudojame A ir B compare interrupt. Kai jie iškviečiami, pridedame laiko tarpą iki kito pin flip. Taip Timer1 vienu metu dideliais dažniais flipina du pjezo.
 
 Dalys:
 ## Components
@@ -34,7 +37,7 @@ D10 ── diskas ── GND
 ```
 
 Kas veikia/neveikia.
-TODO
+Viskas veikia, garsas galėtų būti geresnis.
 
 Pagerinimas.
-TODO
+Reikėtų įdomiau valdyti garsą. Kadangi patys su timeriais valdome pin flip ir dažnį, galima būtų padaryti daug sudėtingesnį garsą.
