@@ -1,6 +1,5 @@
-# HW3 — Music Box
-
-TODO: what it is
+Music Box
+3 buzzers + servo drum + relay ticking. Its mainly interesting because of the timing stuff we do to drive all the buzzers.
 
 Code: [`chiptune_v2/chiptune_v2.ino`](chiptune_v2/chiptune_v2.ino). Timers: [`TIMERS.md`](TIMERS.md).
 
