@@ -79,10 +79,10 @@ New song: `python tools/gen_chiptune.py song.mid chiptune_v2/song.h`
 | 3–4 | `bar` |
 
 ## Tests
-TODO
+All the tests passed.
 
 ## Works / doesn't
-TODO
-
+All the 'instruments' work. Doesn't work we can't control loudness.
+ 
 ## Known issues
-TODO
+Piezzo buzzers are too quiet and cannot do bass. The servo is too loud, and doesnt work well overall. Relay sound is not good. The timings are not exact, since we do division on timer1. Overall the main issues are sound and also that we have hardcoded the songs.
